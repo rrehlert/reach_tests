@@ -1,0 +1,2 @@
+gem 'openssl', :path => "/someplace/minerva/ruby-openssl-upstreamed"
+gem "benchmark-memory"

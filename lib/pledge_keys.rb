@@ -50,6 +50,10 @@ class PledgeKeys
     'prime256v1'
   end
 
+  def cbor_cert
+    @cbor_cert ||= load_cbor_cert
+  end
+
   def product_id=(x)
     @product_dir ||= dbroot.join(x)
     FileUtils::mkdir_p(product_dir.to_s)
@@ -60,6 +64,7 @@ class PledgeKeys
     @masa_file      = @product_dir.join('masa.crt')
     @vendorca_file  = @product_dir.join('vendor.crt')
     @privkey_dir = @pubkey_dir = @product_dir
+    @cbor_file      = @product_dir.join('device.cbor')
   end
 
   def priv_dir
@@ -117,6 +122,10 @@ class PledgeKeys
   end
   def vendor_pub_file
     @vendorca_file ||= pub_dir.join("vendor.crt")
+  end
+
+  def load_cbor_cert
+    cbor_cert_file = File.binread(@cbor_file)
   end
 
   protected

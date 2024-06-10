@@ -1,0 +1,69 @@
+desc: (none)
+cmd: ./signedData
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=260019
+mem_heap_B=10728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=262599
+mem_heap_B=11752
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=268472
+mem_heap_B=11752
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n2: 11752 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n0: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 1024 0x4A30BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4A3FCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4A3EF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x4A3D6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x4A3D6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x4A2714C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x4A2714C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4AE6C4A: __printf_chk (printf_chk.c:33)
+         n0: 1024 0x1092F1: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+#-----------
+snapshot=4
+#-----------
+time=268472
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=270923
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

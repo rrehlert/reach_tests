@@ -1,6 +1,7 @@
 require 'pledge_keys'
 require 'net/http'
 require 'openssl'
+require 'cbor'
 
 URI::Generic.class_eval do
   def request_uri
@@ -199,6 +200,7 @@ class Pledge
 
       ca = CSRAttributes.from_der(response.body)
       rfc822name = ca.find_rfc822Name  # or othername
+      rfc822name ||= "test"
       puts "new device gets rfc822Name: #{rfc822name}"
     end
 
@@ -328,23 +330,55 @@ class Pledge
     extract_serial_number(vr)
 
     begin
-      smime = vr.pkcs_sign_bin(PledgeKeys.instance.idevid_privkey)
-    rescue OpenSSL::PKCS7::PKCS7Error
-      puts "Some problem with signature: #{$!}"
-      return nil
+      file = "tmp/json"
+      puts "Writing Voucher Request to #{file}"
+      dirname = File.basename(Dir.getwd)
+      File.open(file, "wb") do |f|
+        f.write vr.vrhash.to_json
+      end
+      system 'bin/signedData spec/files/product/00-D0-E5-F2-00-02/device.der spec/files/product/00-D0-E5-F2-00-02/key.der tmp/json'
+      #smime = vr.pkcs_sign_bin(PledgeKeys.instance.idevid_privkey)
+    #rescue OpenSSL::PKCS7::PKCS7Error
+      #puts "Some problem with signature: #{$!}"
+      #return nil
     end
-
-    if saveto
+      smime_file = File.open("tmp/smime.der", 'r')
+      smime_content = smime_file.read
+      smime = smime_content
+      if saveto
       file = "tmp/vr_#{vr.serialNumber}.pkcs"
       puts "Writing Voucher Request to #{file}"
       File.open(file, "wb") do |f|
         f.write smime
       end
     end
+    if saveto
+      file = "tmp/vr_#{vr.serialNumber}_smime.pkcs"
+      puts "Writing Voucher Request to #{file}"
+      File.open(file, "wb") do |f|
+        f.write smime_content
+      end
+    end
 
     request.body = smime
+    #cbor_cert = PledgeKeys.instance.cbor_cert
+    #request.body = smime + "PLACEHOLDER" + cbor_cert
+    #cbor_cert = PledgeKeys.instance.cbor_cert
+    #cbor_data = CBOR.decode(cbor_cert)
+    #cbor_data['smime'] = smime
+    #updated_cbor_data = CBOR.encode(cbor_data)
+
+    #request.body = Base64.encode64(cbor_cert)
+    File.open('tmp/body', 'wb') { |file| file.write(request.body) }
     request.content_type = 'application/voucher-cms+json'
     request.add_field("Accept", "application/voucher-cms+json")
+    #request.content_type = 'application/json'
+    #request.add_field("Accept", "application/json")
+
+
+    #cbor_cert = PledgeKeys.instance.cbor_cert
+    #request.add_field("X-CBOR-Certificate", cbor_cert)
+    #File.open('tmp/request.yml', 'w') { |file| file.write(request.to_yaml) }
     response = voucher_request_handler.request request # Net::HTTPResponse object
 
     return handle_voucher_response(response, saveto)

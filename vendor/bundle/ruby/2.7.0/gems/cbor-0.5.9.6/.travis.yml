@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+  - 2.0.0
+  - 2.1.10
+  - 2.2.10
+  - 2.3.7
+  - 2.4.4
+  - 2.5.1
+  - ruby-head
+matrix:
+  allow_failures:
+    - rvm: 2.0.0
+    - rvm: 2.1.10
+    - rvm: 2.2.10
+    - rvm: ruby-head
+
+gemfile:
+  - Gemfile
+
+script: "bundle exec rake spec"
+
+notifications:
+  irc: "irc.freenode.org#coap"

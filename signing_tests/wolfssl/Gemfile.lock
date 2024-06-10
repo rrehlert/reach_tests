@@ -1,0 +1,20 @@
+PATH
+  remote: /someplace/minerva/ruby-openssl-upstreamed
+  specs:
+    openssl (2.2.0.pre.mcr1)
+
+GEM
+  specs:
+    benchmark-memory (0.2.0)
+      memory_profiler (~> 1)
+    memory_profiler (1.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  benchmark-memory
+  openssl!
+
+BUNDLED WITH
+   2.1.4

@@ -1,0 +1,57 @@
+current directory: /someplace/reach/vendor/bundle/ruby/2.7.0/gems/cbor-0.5.9.6/ext/cbor
+/home/minerva/.rbenv/versions/2.7.7/bin/ruby -I /home/minerva/.rbenv/versions/2.7.7/lib/ruby/2.7.0 -r ./siteconf20240416-5561-h0voja.rb extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... yes
+checking for rb_str_replace() in ruby.h... yes
+checking for rb_big_new() in ruby.h... yes
+checking for rb_intern_str() in ruby.h... yes
+checking for rb_sym2str() in ruby.h... yes
+checking for rb_str_intern() in ruby.h... yes
+checking for rb_integer_unpack() in ruby.h... yes
+creating Makefile
+
+current directory: /someplace/reach/vendor/bundle/ruby/2.7.0/gems/cbor-0.5.9.6/ext/cbor
+make "DESTDIR=" clean
+
+current directory: /someplace/reach/vendor/bundle/ruby/2.7.0/gems/cbor-0.5.9.6/ext/cbor
+make "DESTDIR="
+compiling buffer.c
+compiling buffer_class.c
+buffer_class.c: In function ‘read_until_eof’:
+buffer_class.c:270:17: warning: passing argument 3 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  270 |                 read_until_eof_error, (VALUE)(void*) args,
+      |                 ^~~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
+In file included from /home/minerva/.rbenv/versions/2.7.7/include/ruby-2.7.0/ruby.h:33,
+                 from compat.h:30,
+                 from buffer_class.c:28:
+/home/minerva/.rbenv/versions/2.7.7/include/ruby-2.7.0/ruby/ruby.h:1990:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+ 1990 | VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+compiling core_ext.c
+compiling packer.c
+compiling packer_class.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+unpacker_class.c: In function ‘Unpacker_each’:
+unpacker_class.c:281:17: warning: passing argument 3 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  281 |                 Unpacker_rescue_EOFError, self,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
+In file included from /home/minerva/.rbenv/versions/2.7.7/include/ruby-2.7.0/ruby.h:33,
+                 from compat.h:30,
+                 from buffer.h:32,
+                 from unpacker.h:30,
+                 from unpacker_class.c:28:
+/home/minerva/.rbenv/versions/2.7.7/include/ruby-2.7.0/ruby/ruby.h:1990:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+ 1990 | VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~
+linking shared-object cbor/cbor.so
+
+current directory: /someplace/reach/vendor/bundle/ruby/2.7.0/gems/cbor-0.5.9.6/ext/cbor
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cbor.so ./.gem.20240416-5561-1vh3jub/cbor

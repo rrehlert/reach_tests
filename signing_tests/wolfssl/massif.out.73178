@@ -1,0 +1,1162 @@
+desc: (none)
+cmd: ./signedData device.der key.der tmp/json
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=260019
+mem_heap_B=10728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=262407
+mem_heap_B=11200
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=263035
+mem_heap_B=15296
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=263648
+mem_heap_B=16210
+mem_heap_extra_B=62
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=264316
+mem_heap_B=12556
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=265272
+mem_heap_B=11642
+mem_heap_extra_B=38
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=265920
+mem_heap_B=16210
+mem_heap_extra_B=62
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=266665
+mem_heap_B=12114
+mem_heap_extra_B=54
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=267448
+mem_heap_B=16210
+mem_heap_extra_B=62
+mem_stacks_B=0
+heap_tree=detailed
+n5: 16210 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 4096 0x4A30BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 4096 0x4A3FCDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4A3D4C3: _IO_file_xsgetn (fileops.c:1287)
+    n2: 4096 0x4A31BA8: fread (iofread.c:38)
+     n0: 4096 0x1093BE: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 472 0x4A3164D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x4A3164D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x109396: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=268269
+mem_heap_B=11642
+mem_heap_extra_B=38
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=431261
+mem_heap_B=11778
+mem_heap_extra_B=54
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=460935
+mem_heap_B=13018
+mem_heap_extra_B=70
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=462257
+mem_heap_B=13042
+mem_heap_extra_B=86
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=472830
+mem_heap_B=13057
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=473609
+mem_heap_B=17625
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=474527
+mem_heap_B=18496
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=477040
+mem_heap_B=18496
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=detailed
+n7: 18496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 4096 0x4A30BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 4096 0x4A3FCDF: _IO_doallocbuf (genops.c:347)
+   n2: 4096 0x4A3D4C3: _IO_file_xsgetn (fileops.c:1287)
+    n1: 4096 0x4A3C1F3: fread_unlocked (iofread_u.c:40)
+     n1: 4096 0x4A8D95B: __tzfile_read (tzfile.c:182)
+      n1: 4096 0x4A8CC23: tzset_internal (tzset.c:405)
+       n1: 4096 0x4A8D5A6: __tz_convert (tzset.c:577)
+        n1: 4096 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 4096 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n1: 4096 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+           n1: 4096 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+            n1: 4096 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+             n0: 4096 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 472 0x4A3164D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x4A3164D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x4A8D852: __tzfile_read (tzfile.c:162)
+    n1: 472 0x4A8CC23: tzset_internal (tzset.c:405)
+     n1: 472 0x4A8D5A6: __tz_convert (tzset.c:577)
+      n1: 472 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 472 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 472 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 472 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n1: 472 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+           n0: 472 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 175 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=477584
+mem_heap_B=13988
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=486016
+mem_heap_B=15444
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=489969
+mem_heap_B=15476
+mem_heap_extra_B=188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=491870
+mem_heap_B=15820
+mem_heap_extra_B=204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=492054
+mem_heap_B=15822
+mem_heap_extra_B=226
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=493743
+mem_heap_B=15926
+mem_heap_extra_B=242
+mem_stacks_B=0
+heap_tree=detailed
+n7: 15926 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 1456 0x4935A98: wolfSSL_X509_NAME_new_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 1456 0x48B673C: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 1456 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 373 in 11 places, all below massif's threshold (1.00%)
+ n1: 344 0x4912681: wolfSSL_ASN1_OBJECT_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 344 0x492936C: wolfSSL_OBJ_nid2obj_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 344 0x4929492: wolfssl_x509_name_entry_set (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 344 0x4935D8B: wolfSSL_X509_NAME_ENTRY_create_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 344 0x4936D6E: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 344 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 344 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 344 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 344 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n1: 344 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+           n0: 344 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+#-----------
+snapshot=24
+#-----------
+time=498177
+mem_heap_B=16270
+mem_heap_extra_B=258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=498460
+mem_heap_B=16376
+mem_heap_extra_B=296
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=500152
+mem_heap_B=16712
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=503207
+mem_heap_B=16744
+mem_heap_extra_B=312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=505316
+mem_heap_B=16742
+mem_heap_extra_B=290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=506227
+mem_heap_B=16262
+mem_heap_extra_B=250
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=508215
+mem_heap_B=17718
+mem_heap_extra_B=258
+mem_stacks_B=0
+heap_tree=detailed
+n8: 17718 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 2912 0x4935A98: wolfSSL_X509_NAME_new_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n2: 2912 0x48B673C: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 1456 0x48BA6E9: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 1456 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 373 in 12 places, all below massif's threshold (1.00%)
+ n1: 344 0x4912681: wolfSSL_ASN1_OBJECT_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 344 0x492936C: wolfSSL_OBJ_nid2obj_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 344 0x4929492: wolfssl_x509_name_entry_set (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n2: 344 0x4935D8B: wolfSSL_X509_NAME_ENTRY_create_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 344 0x4936A43: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 344 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 344 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 344 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 344 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n1: 344 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+           n1: 344 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+            n0: 344 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 336 0x4923521: wolfSSL_sk_new_node (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 336 0x493675E: wolfSSL_sk_X509_NAME_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 336 0x4936C94: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 336 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 336 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 336 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 336 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 336 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 336 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n0: 336 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+#-----------
+snapshot=31
+#-----------
+time=509355
+mem_heap_B=17750
+mem_heap_extra_B=266
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=509930
+mem_heap_B=18200
+mem_heap_extra_B=320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=510891
+mem_heap_B=18986
+mem_heap_extra_B=382
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=511513
+mem_heap_B=19018
+mem_heap_extra_B=390
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=512282
+mem_heap_B=18536
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=516897
+mem_heap_B=18627
+mem_heap_extra_B=341
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=537382
+mem_heap_B=21771
+mem_heap_extra_B=357
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=537973
+mem_heap_B=24915
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=538983
+mem_heap_B=31203
+mem_heap_extra_B=405
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=539488
+mem_heap_B=34347
+mem_heap_extra_B=421
+mem_stacks_B=0
+heap_tree=detailed
+n9: 34347 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 15720 0x48CC0A9: wc_ecc_new_point_ex.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 9432 0x48CEE78: wc_ecc_mulmod_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 9432 0x48CF24C: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 9432 0x48DA751: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n0: 9432 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+  n1: 3144 0x48CEE92: wc_ecc_mulmod_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 3144 0x48CF24C: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 3144 0x48DA751: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n0: 3144 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+  n1: 3144 0x48CF1E0: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 3144 0x48DA751: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n0: 3144 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 2912 0x4935A98: wolfSSL_X509_NAME_new_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n2: 2912 0x48B673C: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 1456 0x48BA6E9: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 1456 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 688 0x4912681: wolfSSL_ASN1_OBJECT_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 688 0x492936C: wolfSSL_OBJ_nid2obj_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 688 0x4929492: wolfssl_x509_name_entry_set (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n2: 688 0x4935D8B: wolfSSL_X509_NAME_ENTRY_create_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 688 0x4936A43: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 688 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 688 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n0: 688 in 2 places, all below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 672 0x4923521: wolfSSL_sk_new_node (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 672 0x493675E: wolfSSL_sk_X509_NAME_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 672 0x4936C94: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 672 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 672 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n0: 672 in 2 places, all below massif's threshold (1.00%)
+ n0: 602 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=5571524
+mem_heap_B=34347
+mem_heap_extra_B=421
+mem_stacks_B=0
+heap_tree=peak
+n9: 34347 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 15720 0x48CC0A9: wc_ecc_new_point_ex.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 9432 0x48CEE78: wc_ecc_mulmod_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 9432 0x48CF24C: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 9432 0x48DA751: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n0: 9432 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+  n1: 3144 0x48CEE92: wc_ecc_mulmod_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 3144 0x48CF24C: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 3144 0x48DA751: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n0: 3144 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+  n1: 3144 0x48CF1E0: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 3144 0x48DA751: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n0: 3144 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 2912 0x4935A98: wolfSSL_X509_NAME_new_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n2: 2912 0x48B673C: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 1456 0x48BA6E9: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 1456 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 688 0x4912681: wolfSSL_ASN1_OBJECT_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 688 0x492936C: wolfSSL_OBJ_nid2obj_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 688 0x4929492: wolfssl_x509_name_entry_set (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n2: 688 0x4935D8B: wolfSSL_X509_NAME_ENTRY_create_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 688 0x4936A43: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 688 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 688 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n0: 688 in 2 places, all below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 672 0x4923521: wolfSSL_sk_new_node (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 672 0x493675E: wolfSSL_sk_X509_NAME_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 672 0x4936C94: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 672 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 672 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n0: 672 in 2 places, all below massif's threshold (1.00%)
+ n0: 602 in 13 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=5572057
+mem_heap_B=18627
+mem_heap_extra_B=341
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=5574537
+mem_heap_B=18536
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=5574766
+mem_heap_B=18054
+mem_heap_extra_B=266
+mem_stacks_B=0
+heap_tree=detailed
+n8: 18054 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 2912 0x4935A98: wolfSSL_X509_NAME_new_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n2: 2912 0x48B673C: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 1456 0x48BA6E9: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 1456 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 1456 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 1456 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 1456 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n0: 1456 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 672 0x4923521: wolfSSL_sk_new_node (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 672 0x493675E: wolfSSL_sk_X509_NAME_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 672 0x4936C94: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 672 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n2: 672 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 336 0x48BA6E9: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 336 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 336 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 336 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n0: 336 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+      n1: 336 0x48BA98F: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 336 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 336 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 336 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n0: 336 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 373 in 14 places, all below massif's threshold (1.00%)
+ n1: 344 0x4912681: wolfSSL_ASN1_OBJECT_new (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 344 0x492936C: wolfSSL_OBJ_nid2obj_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 344 0x4929492: wolfssl_x509_name_entry_set (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n2: 344 0x4935D8B: wolfSSL_X509_NAME_ENTRY_create_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 344 0x4936A43: wolfSSL_X509_NAME_add_entry (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 344 0x4936D88: wolfSSL_X509_NAME_add_entry_by_NID (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n2: 344 0x48B6BBE: GetCertName (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 344 0x48BA6E9: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 344 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n1: 344 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+           n1: 344 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+            n0: 344 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=5576572
+mem_heap_B=17718
+mem_heap_extra_B=258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=5577124
+mem_heap_B=13988
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=5646137
+mem_heap_B=14113
+mem_heap_extra_B=183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=5646748
+mem_heap_B=14265
+mem_heap_extra_B=247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=5647817
+mem_heap_B=14226
+mem_heap_extra_B=230
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=5648023
+mem_heap_B=14145
+mem_heap_extra_B=191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=5675295
+mem_heap_B=17257
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=5675886
+mem_heap_B=20401
+mem_heap_extra_B=215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=5676391
+mem_heap_B=23545
+mem_heap_extra_B=231
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=5676896
+mem_heap_B=26689
+mem_heap_extra_B=247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=5677401
+mem_heap_B=29833
+mem_heap_extra_B=263
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=10708701
+mem_heap_B=26689
+mem_heap_extra_B=247
+mem_stacks_B=0
+heap_tree=detailed
+n6: 26689 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 12576 0x48CC0A9: wc_ecc_new_point_ex.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 9432 0x48CEE78: wc_ecc_mulmod_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n2: 9432 0x48CF24C: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 9432 0x48D5877: wc_PKCS7_ImportECC.part.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 9432 0x48D616A: wc_PKCS7_EcdsaSign (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 9432 0x48D6480: wc_PKCS7_SignedDataBuildSignature (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 9432 0x48E0803: PKCS7_EncodeSigned (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 9432 0x48E1039: wc_PKCS7_EncodeSignedData (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 9432 0x1094CA: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n2: 3144 0x48CF1E0: _ecc_validate_public_key.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 3144 0x48D5877: wc_PKCS7_ImportECC.part.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 3144 0x48D616A: wc_PKCS7_EcdsaSign (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 3144 0x48D6480: wc_PKCS7_SignedDataBuildSignature (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 3144 0x48E0803: PKCS7_EncodeSigned (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 3144 0x48E1039: wc_PKCS7_EncodeSignedData (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n0: 3144 0x1094CA: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 360 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=10708949
+mem_heap_B=20401
+mem_heap_extra_B=215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=10709234
+mem_heap_B=14113
+mem_heap_extra_B=183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=10761344
+mem_heap_B=17257
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=10762102
+mem_heap_B=20401
+mem_heap_extra_B=215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=10762606
+mem_heap_B=23545
+mem_heap_extra_B=231
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=10763110
+mem_heap_B=26689
+mem_heap_extra_B=247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=10763614
+mem_heap_B=29833
+mem_heap_extra_B=263
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=15731492
+mem_heap_B=26689
+mem_heap_extra_B=247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=15731778
+mem_heap_B=20401
+mem_heap_extra_B=215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=15732208
+mem_heap_B=18137
+mem_heap_extra_B=207
+mem_stacks_B=0
+heap_tree=detailed
+n7: 18137 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n2: 3144 0x48CC0A9: wc_ecc_new_point_ex.constprop.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 3144 0x48CFC1A: ecc_make_pub_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 3144 0x48CFFC2: _ecc_make_key_ex.part.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 3144 0x48D04C4: wc_ecc_sign_hash_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 3144 0x48D0955: wc_ecc_sign_hash (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 3144 0x48D6196: wc_PKCS7_EcdsaSign (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 3144 0x48D6480: wc_PKCS7_SignedDataBuildSignature (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 3144 0x48E0803: PKCS7_EncodeSigned (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 3144 0x48E1039: wc_PKCS7_EncodeSignedData (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n0: 3144 0x1094CA: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+  n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 1240 0x48DA218: wc_PKCS7_New (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n0: 1240 0x109432: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 880 0x48A0518: sp_invmod_mont_ct (in /usr/local/lib/libwolfssl.so.42.1.0)
+  n1: 880 0x48CD3E1: ecc_map_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+   n1: 880 0x48CFD71: ecc_make_pub_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+    n1: 880 0x48CFFC2: _ecc_make_key_ex.part.0 (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 880 0x48D04C4: wc_ecc_sign_hash_ex (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 880 0x48D0955: wc_ecc_sign_hash (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 880 0x48D6196: wc_PKCS7_EcdsaSign (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 880 0x48D6480: wc_PKCS7_SignedDataBuildSignature (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n1: 880 0x48E0803: PKCS7_EncodeSigned (in /usr/local/lib/libwolfssl.so.42.1.0)
+          n1: 880 0x48E1039: wc_PKCS7_EncodeSignedData (in /usr/local/lib/libwolfssl.so.42.1.0)
+           n0: 880 0x1094CA: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 360 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=15870614
+mem_heap_B=17257
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=15874870
+mem_heap_B=14113
+mem_heap_extra_B=183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=16010273
+mem_heap_B=14089
+mem_heap_extra_B=167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=16010697
+mem_heap_B=13964
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=16011041
+mem_heap_B=14988
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=16013971
+mem_heap_B=15460
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=16014608
+mem_heap_B=19556
+mem_heap_extra_B=188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=16015390
+mem_heap_B=15460
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=16015613
+mem_heap_B=13748
+mem_heap_extra_B=148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=16016459
+mem_heap_B=13612
+mem_heap_extra_B=132
+mem_stacks_B=0
+heap_tree=detailed
+n5: 13612 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10728 0x4ADAC12: monstartup (gmon.c:153)
+  n1: 10728 0x109640: __gmon_start__ (in /home/rehlert/tests/signing/wolfssl/signedData)
+   n1: 10728 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 10728 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 10728 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 10728 0x40065F8: call_init (dl-init.c:33)
+       n1: 10728 0x40065F8: _dl_init (dl-init.c:84)
+        n1: 10728 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+         n1: 10728 0x3: ???
+          n1: 10728 0x1FFF000382: ???
+           n1: 10728 0x1FFF00038F: ???
+            n1: 10728 0x1FFF00039A: ???
+             n0: 10728 0x1FFF0003A2: ???
+ n1: 1024 0x4A30BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 1024 0x4A3FCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4A3EF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x4A3D6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x4A3D6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x4A2714C: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x4A2714C: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4AE6C4A: __printf_chk (printf_chk.c:33)
+         n0: 1024 0x109515: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 914 0x109329: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n1: 871 0x4A8DAC2: __tzfile_read (tzfile.c:275)
+  n1: 871 0x4A8CC23: tzset_internal (tzset.c:405)
+   n1: 871 0x4A8D5A6: __tz_convert (tzset.c:577)
+    n1: 871 0x48BA342: wc_ValidateDate (in /usr/local/lib/libwolfssl.so.42.1.0)
+     n1: 871 0x48BAA0E: DecodeCertInternal (in /usr/local/lib/libwolfssl.so.42.1.0)
+      n1: 871 0x48C35D9: ParseCertRelative (in /usr/local/lib/libwolfssl.so.42.1.0)
+       n1: 871 0x48C3AE2: ParseCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+        n1: 871 0x48DA3F7: wc_PKCS7_InitWithCert (in /usr/local/lib/libwolfssl.so.42.1.0)
+         n0: 871 0x10944F: main (in /home/rehlert/tests/signing/wolfssl/signedData)
+ n0: 75 in 22 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=77
+#-----------
+time=16021238
+mem_heap_B=2884
+mem_heap_extra_B=116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=16023689
+mem_heap_B=1860
+mem_heap_extra_B=108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=16025022
+mem_heap_B=914
+mem_heap_extra_B=22
+mem_stacks_B=0
+heap_tree=empty
